@@ -1,0 +1,22 @@
+  .col-md-4 {
+      background-color: rgb(225, 226, 228);
+  }
+
+  h1 {
+      background-color: rgb(68, 67, 67);
+      color: white;
+      text-align: center;
+      padding: 5px;
+  }
+
+  form {
+      padding-bottom: 10px;
+  }
+
+ .col-md-2 {
+     background-color: blue;
+     padding: 10px;
+     text-align: center;
+     margin-left: 1%;
+     color: white;
+ }
