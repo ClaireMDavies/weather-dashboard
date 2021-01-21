@@ -3,9 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--link to css-->
     <link rel="stylesheet" href="style.css">
+    <!--Bootstrap link added-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
-
+     <!--Jquery link added-->
+     <script src="https://code.jquery.com/jquery-3.5.1.js"
+     integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+    <!--javascript link added-->
+    <script type="text/javascript" src="weather-dashboard.js"></script>
     <title>Weather Dashboard</title>
 </head>
 <body>
@@ -17,10 +23,10 @@
             <div class="col-md-4">
                 <div class="row">
                     <h3>Search for a city:</h3>
-                    <form class="d-flex">
-                        <input class="form-control me-2" type="search" aria-label="Search">
-                        <button class="btn btn-outline-primary" type="submit">Search</button>
-                    </form>
+                    <div class="d-flex">
+                        <input class="form-control me-2" id="city-name" type="search" aria-label="Search">
+                        <button class="btn btn-outline-primary" id ="search-button">Search</button>
+                    </div>
                 </div>
                 <div class="card" >
                     <ul class="list-group list-group-flush">
@@ -32,44 +38,45 @@
                 <div class="row">
                     <div class="card">
                         <div class="card-body">
-                            <h2> Town</h2>
-                            <h6>Temperature:</h6>
-                            <h6>Wind Speed:</h6>
-                            <h6>UV Index:</h6>
+                            <h2 id="cityHeader"> </h2>
+                            <h6 id="temp">Temperature:</h6>
+                            <h6 id="humid">Humidity</h6>
+                            <h6 id="windspeed">Wind Speed:</h6>
+                            <h6 id="uv-index">UV Index:</h6>
                         </div>
                     </div>
                 </div>
                 <div class="row ">
                     <h2>5 day forecast</h2>
-                    <div class= "col-md-2">
-                        <h4>date</h4>
-                        
-                        <h6>Temp:</h6>
-                        <h6>Humidity</h6>
+                    <div class="col-md-2">
+                        <h4 id="date1">date</h4>
+                        <h6 id="icon1"></h6>
+                        <h6 id="temp1">Temp:</h6>
+                        <h6 id="humid1">Humidity</h6>
                     </div>
-                    <div class= "col-md-2">
-                        <h4>date</h4>
-                        
-                        <h6>Temp:</h6>
-                        <h6>Humidity</h6>
+                    <div class="col-md-2">
+                        <h4 id="date2">date</h4>
+                        <h6 id="icon2"></h6>
+                        <h6 id="temp2">Temp:</h6>
+                        <h6 id="humid2">Humidity</h6>
                     </div>
-                    <div class= "col-md-2">
-                        <h4>date</h4>
-                        
-                        <h6>Temp:</h6>
-                        <h6>Humidity</h6>
+                    <div class="col-md-2">
+                        <h4 id="date3">date</h4>
+                        <h6 id="icon3"></h6>
+                        <h6 id="temp3">Temp:</h6>
+                        <h6 id="humid3">Humidity</h6>
                     </div>
-                    <div class= "col-md-2">
-                        <h4>date</h4>
-                        
-                        <h6>Temp:</h6>
-                        <h6>Humidity</h6>
+                    <div class="col-md-2">
+                        <h4 id="date4">date</h4>
+                        <h6 id="icon4"></h6>
+                        <h6 id="temp4">Temp:</h6>
+                        <h6 id="humid4">Humidity</h6>
                     </div>
-                    <div class= "col-md-2">
-                        <h4>date</h4>
-                        
-                        <h6>Temp:</h6>
-                        <h6>Humidity</h6>
+                    <div class="col-md-2">
+                        <h4 id="date5">date</h4>
+                        <h6 id="icon5"></h6>
+                        <h6 id="temp5">Temp:</h6>
+                        <h6 id="humid5">Humidity</h6>
                     </div>
                 </div>
 
