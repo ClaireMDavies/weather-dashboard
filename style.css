@@ -14,9 +14,23 @@
   }
 
  .col-md-2 {
-     background-color: blue;
+     background-color: rgb(8, 153, 250);
      padding: 10px;
      text-align: center;
      margin-left: 1%;
      color: white;
  }
+
+ #city-header {
+     display: inline;
+ }
+ 
+ #icon {
+     padding-bottom: 15px;
+ }
+
+ #uv-index {
+     background-color: none;
+     
+ }
+

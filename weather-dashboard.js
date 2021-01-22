@@ -8,7 +8,15 @@ $(document).ready(function () {
         callWeatherApi(cityName);
 
     });
-
+    //initiate API call on enter being pressed
+    $("#city-name").keyup(function(event){
+        if(event.keyCode == 13){
+            $("#city-name").click();
+            var cityName = $("#city-name").val();
+            console.log(cityName);
+            callWeatherApi(cityName);
+        }
+    });
 
 
     //API call 
@@ -41,6 +49,7 @@ $(document).ready(function () {
                 //using returned name in location data to ensure correct capitalisation
                 displayCurrentWeatherData(weatherData, locationData.name);
                 displayFutureWeatherData(weatherData);
+                ivDisplay(weatherData);
             })
         })
     }
@@ -48,53 +57,61 @@ $(document).ready(function () {
 
 //displaying current weather  
 function displayCurrentWeatherData(weatherData, cityName) {
-    $("#cityHeader").html("<h2>" + cityName + " " + "</h2>");
-    $("#temp").html("<h6> Temperature: " + weatherData.current.temp + "°C</h6>");
-    $("#humid").html("<h6> Humidity: " + weatherData.current.humidity + "%</h6>");
-    $("#windspeed").html("<h6> Wind Speed: " + weatherData.current.wind_speed + "MPH</h6>");
-    $("#uv-index").html("<h6> UV Index: " + weatherData.current.uvi + "</h6>");
+    var todaysDate = new Date(weatherData.current.dt *1000);
+    todaysDate = todaysDate.toLocaleDateString();
+    $("#icon").attr("src", `http://openweathermap.org/img/wn/${weatherData.current.weather[0].icon}.png`);
+
+    $("#city-header").html(cityName + " " + todaysDate);
+    $("#temp").html("Temperature: " + weatherData.current.temp + "°C");
+    $("#humid").html("Humidity: " + weatherData.current.humidity + "%");
+    $("#windspeed").html("Wind Speed: " + weatherData.current.wind_speed + "MPH");
+    $("#uv-index").html("UV Index: " + weatherData.current.uvi);
+    
 }
 
-//display 5 day forecast
+//display 5 day forecast (discarding first array index to save duplication)
 function displayFutureWeatherData(weatherData) {
     for (var i = 1; i <= 5; i++) {
         var futureWeather = weatherData.daily[i];
         var date = new Date(futureWeather.dt * 1000);
         date = date.toLocaleDateString();
+    
         console.log(date);
-        $("#date" + i).html("<h4>" + date + "</h4>");
-        $("#temp" + i).html("<h6> Temp: " + futureWeather.temp.day + "°C</h6>");
-        $("#humid" + i).html("<h6> humidity: " + futureWeather.humidity + "%</h6>");
+        $("#date" + i).html(date);
+        $("#temp" + i).html("Temp: " + futureWeather.temp.day + "°C");
+        $("#humid" + i).html("Humidity: " + futureWeather.humidity + "%");
+        $("#icon" +i).attr("src", `http://openweathermap.org/img/wn/${futureWeather.weather[0].icon}.png`);
+    }
+}
 
-
+function ivDisplay(weatherData) {
+    var uvLevel = weatherData.current.uvi;
+    if (uvLevel >= 3) {
+        $("#uv-index").css("background-color", "yellow");
+        
     }
 
+    if (uvLevel >= 8) {
+            $("#uv-index").css("background-color", "red");
+    }
 
-
+    else {
+        $("#uv-index").css("background-color", "green");
+    }
 }
 
 
 
-                        //$.each(weatherData.daily, function (index, val) {
-                            //var UNIX_Timestamp = val.dt;
-                            //var date = new Date(UNIX_Timestamp * 1000);
-                            //
-
-                            //
-
-                        //})
+                       
 
 
 
 
-                        //$("#icon")
-
-                    //});
-            //})
+                        
             //.fail(function () {
                 //alert("failed");
             //});
-    //}
+    
 
 
 
