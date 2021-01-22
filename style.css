@@ -29,8 +29,23 @@
      padding-bottom: 15px;
  }
 
- #uv-index {
+ #uv-index:before {
      background-color: none;
+     display: inline;
+     position:absolute;
      
  }
+
+ ul {
+     list-style-type: none;
+ }
+
+ li {
+     padding: 10px;
+     border:rgb(177, 178, 180);
+     border-style: solid;
+    
+
+ }
+
 

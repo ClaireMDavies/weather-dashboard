@@ -25,13 +25,14 @@
                     <h3>Search for a city:</h3>
                     <div class="d-flex">
                         <input class="form-control me-2" id="city-name" type="search" aria-label="Search">
-                        <button class="btn btn-outline-primary" id ="search-button">Search</button>
+                        <button class="btn btn-outline-primary" id="search-button">Search</button>
                     </div>
                 </div>
                 <div class="card" >
-                    <ul class="list-group list-group-flush">
-                      <!--<li class="list-group-item">Cras justo odio</li>-->
+                    <ul class="list-group list-group-flush" id="city-list">
+                      
                     </ul>
+                    <button class="btn btn-outline-primary" id="clear">Clear</button>
                   </div>
                 </div>
             <div class="col-md-8">
@@ -42,7 +43,7 @@
                             <h6 id="temp">Temperature:</h6>
                             <h6 id="humid">Humidity</h6>
                             <h6 id="windspeed">Wind Speed:</h6>
-                            <h6 id="uv-index">UV Index:</h6>
+                            <h6>UV Index:<span id="uv-index"></span></h6>
                         </div>
                     </div>
                 </div>
