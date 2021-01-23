@@ -29,11 +29,12 @@
      padding-bottom: 15px;
  }
 
- #uv-index:before {
+ #uv-index {
      background-color: none;
      display: inline;
-     position:absolute;
-     
+     position: absolute;
+     padding-left: 3px;
+     padding-right: 3px;
  }
 
  ul {
@@ -47,5 +48,7 @@
     
 
  }
+
+ 
 
 
