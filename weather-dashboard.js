@@ -180,8 +180,9 @@ function loadPreviousSearches() {
 
 //create buttons for search history list
 function createListButtons(cityName) {
-    $("#city-list").prepend('<li><button id=' + cityName + '-button>' + cityName + '</button></li>');
+    $("#city-list").prepend('<li><button id=' + cityName + '-button class="list-button">' + cityName + '</button></li>');
     $("#" + cityName + "-button").click(existingCityClick);
+    
    
 }
 

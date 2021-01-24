@@ -1,5 +1,8 @@
   .col-md-4 {
       background-color: rgb(225, 226, 228);
+      border:rgb(68, 67, 67);
+      border-style: inset;
+     
   }
 
   h1 {
@@ -19,6 +22,9 @@
      text-align: center;
      margin-left: 1%;
      color: white;
+     border:rgb(5, 97, 158);
+     border-style: outset;
+     
  }
 
  #city-header {
@@ -45,10 +51,16 @@
      padding: 10px;
      border:rgb(177, 178, 180);
      border-style: solid;
-    
+ }
 
+ .list-button {
+     background-color: rgb(8, 153, 250); 
+     color: white;
+     width: 100%;
+     padding: 5px;
+     border: rgb(5, 97, 158);
+     border-style: outset; 
  }
 
  
-
 
