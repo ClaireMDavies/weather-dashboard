@@ -5,7 +5,7 @@ Using the open weather API's, to create a page that would search for the current
 
 ## Live link to the deployed app
 
-The live site is found at [GitHubPages](https://clairemdavies.github.io/week-07-weather-dashboard-homework/)
+The live site is found at [GitHubPages](https://clairemdavies.github.io/weather-dashboard/)
 
  
 ## Screenshots of the application <br>
