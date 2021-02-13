@@ -1,69 +1,65 @@
-  .col-md-4 {
-      background-color: rgb(225, 226, 228);
-      border:rgb(68, 67, 67);
-      border-style: inset;
-     
-  }
+.col-md-4 {
+  background-color: rgb(225, 226, 228);
+  border: rgb(68, 67, 67);
+  border-style: inset;
+}
 
-  h1 {
-      background-color: rgb(68, 67, 67);
-      color: white;
-      text-align: center;
-      padding: 5px;
-  }
+h1 {
+  background-color: rgb(68, 67, 67);
+  color: white;
+  text-align: center;
+  padding: 5px;
+}
 
-  form {
-      padding-bottom: 10px;
-  }
+form {
+  padding-bottom: 10px;
+}
 
- .col-md-2 {
-     background-color: rgb(8, 153, 250);
-     padding: 10px;
-     text-align: center;
-     margin-left: 1%;
-     color: white;
-     border:rgb(5, 97, 158);
-     border-style: outset;
-     
- }
+.col-md-2 {
+  background-color: rgb(8, 153, 250);
+  padding: 10px;
+  text-align: center;
+  margin-left: 1%;
+  color: white;
+  border: rgb(5, 97, 158);
+  border-style: outset;
+}
 
- #city-header {
-     display: inline;
- }
- 
- #icon {
-     padding-bottom: 15px;
- }
+#city-header {
+  display: inline;
+}
 
- #uv-index {
-     background-color: none;
-     display: inline;
-     position: absolute;
-     padding-left: 3px;
-     padding-right: 3px;
- }
+#icon {
+  padding-bottom: 15px;
+}
 
- ul {
-     list-style-type: none;
- }
+#uv-index {
+  background-color: none;
+  display: inline;
+  position: absolute;
+  padding-left: 3px;
+  padding-right: 3px;
+}
 
- li {
-     padding: 10px;
-     border:rgb(177, 178, 180);
-     border-style: solid;
- }
+ul {
+  list-style-type: none;
+}
 
- .list-button {
-     background-color: rgb(8, 153, 250); 
-     color: white;
-     width: 100%;
-     padding: 5px;
-     border: rgb(5, 97, 158);
-     border-style: outset; 
- }
+li {
+  padding: 10px;
+  border: rgb(177, 178, 180);
+  border-style: solid;
+}
 
- .d-flex {
-     padding-bottom: 10px;
- }
+.list-button {
+  background-color: rgb(8, 153, 250);
+  color: white;
+  width: 100%;
+  padding: 5px;
+  border: rgb(5, 97, 158);
+  border-style: outset;
+}
 
- 
+.d-flex {
+  padding-bottom: 10px;
+}
