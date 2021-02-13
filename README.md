@@ -13,6 +13,7 @@ The live site is found at [GitHubPages](https://clairemdavies.github.io/week-07-
 Screenshots of the page are shown below:<br>
 ![weather-dashboard.png](assets/weather-dashboard.png)<br>
 ![weather-dashboard-02.png](assets/weather-dashboard-02.png)<br>
+![weather-dashboard-uv.png](assets/weather-dashboard-uv.png)<br>
 
 ## Technologies used <br>
 - HTML
