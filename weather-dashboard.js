@@ -190,4 +190,3 @@ function createListButtons(cityName) {
 
 
 
-            
