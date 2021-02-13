@@ -182,8 +182,6 @@ function loadPreviousSearches() {
 function createListButtons(cityName) {
     $("#city-list").prepend('<li><button id=' + cityName + '-button class="list-button">' + cityName + '</button></li>');
     $("#" + cityName + "-button").click(existingCityClick);
-    
-   
 }
 
 
