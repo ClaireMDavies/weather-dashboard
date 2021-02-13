@@ -62,5 +62,8 @@
      border-style: outset; 
  }
 
- 
+ .d-flex {
+     padding-bottom: 10px;
+ }
 
+ 
