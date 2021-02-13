@@ -23,4 +23,8 @@ Screenshots of the page are shown below:<br>
 
 ## License
 
+Licensed under the [MIT License](LICENSE)
+
 ## Contact Information 
+
+Claire Davies: [Github](https://github.com/ClaireMDavies)
